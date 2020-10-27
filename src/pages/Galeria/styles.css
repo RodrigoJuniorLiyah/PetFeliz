@@ -1,0 +1,69 @@
+.content-gallery {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+
+  transition: all ease 0.3s;
+
+  grid-template-areas:
+    "submenu"
+    "gallery";
+}
+
+.subMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnMenu {
+  padding: 10px 50px;
+  margin: 30px;
+
+  border-radius: 5px;
+  border: none;
+
+  font: 400 1.3rem "Petrona", serif;
+  color: #fff;
+  background-color: rgba(38, 70, 83);
+
+  transition: 0.2s;
+}
+
+.btnMenu:hover {
+  background-color: rgba(38, 70, 83, 0.8);
+}
+
+.btnMenu:focus {
+  outline: none;
+}
+
+.row {
+  grid-area: gallery;
+  margin: 0;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card_img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 25px;
+}
+
+.small_img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+
+  transition: all linear 0.3s;
+
+  cursor: pointer;
+}
+
+.small_img:hover {
+  transform: scale(1.1);
+}

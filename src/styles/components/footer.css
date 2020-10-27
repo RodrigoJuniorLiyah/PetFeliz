@@ -1,0 +1,91 @@
+.footer {
+  grid-area: footer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-background);
+  color: var(--color-fontMenu);
+
+  height: 100%;
+}
+
+.footer .insta {
+  position: absolute;
+  left: 30px;
+  padding: 3px;
+  border-radius: 5px;
+
+  display: flex;
+
+  background-color: #fff;
+}
+
+.insta a {
+  text-decoration: none;
+
+  color: #831d1c;
+
+  font: bold 1.3rem "Nunito";
+
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+.footer .insta .instaIcon {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+
+  color: #a52a2a;
+}
+
+.insta a:hover,
+.insta img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.footer .face {
+  position: absolute;
+  left: 230px;
+  padding: 3px;
+  border-radius: 5px;
+
+  display: flex;
+
+  background-color: #fff;
+}
+
+.face a {
+  text-decoration: none;
+  color: #2f55a4;
+
+  font: bold 1.3rem "Nunito";
+
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+.face a:hover,
+.face img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.footer p {
+  font: bold 1.8rem "Petrona";
+
+  margin: 0;
+}
+
+.footer .face .faceIcon {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+
+  color: #2f55a4;
+}

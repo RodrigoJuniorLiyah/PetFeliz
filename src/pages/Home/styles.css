@@ -1,0 +1,102 @@
+#page {
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 70px 1fr 40px;
+
+  grid-template-areas:
+    "menu"
+    "content"
+    "footer";
+}
+
+.input-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 30%;
+}
+
+.input-search .search {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.input-search .search input {
+  height: 50px;
+
+  font-size: 1.6rem;
+}
+
+.input-search .button-search button {
+  height: 50px;
+
+  transition: all ease 0.2s;
+}
+
+.content {
+  display: grid;
+  grid-area: content;
+  grid-template-columns: 1fr 1fr;
+
+  height: 100%;
+}
+
+.content .content-content {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "text"
+    "form";
+}
+
+.content-content .content-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-content .content-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(329.54deg, #ff6501 40%, #fd3900 100%)
+}
+
+.content-content .content-text h1 {
+  color: #FFF;
+
+  font-family: 'Nunito';
+  font-weight: 400;
+}
+
+@media (max-width: 1160px) {
+  .menu {
+    grid-template-columns: 200px 1fr 250px;
+  }
+
+  .menu .nav {
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .menu .nav a {
+    margin: 10px;
+  }
+
+  .menu .rappi .boxRappi p {
+    font-size: 13px;
+  }
+
+  .footer {
+    justify-content: flex-end;
+  }
+
+  .footer p {
+    margin-right: 150px;
+  }
+}

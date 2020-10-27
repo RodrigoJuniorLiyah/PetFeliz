@@ -1,0 +1,17 @@
+:root {
+  font-size: 60%;
+
+  --color-background: #f86624;
+  --color-fontMenu: #f0f0f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f7;
+
+}

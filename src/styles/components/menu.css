@@ -1,0 +1,110 @@
+.menu {
+  grid-area: menu;
+  display: grid;
+
+  grid-template-columns: 200px 1fr 300px;
+  grid-template-rows: 100%;
+
+  height: 100%;
+
+  background-color: #f86624;
+}
+
+.menu .nav {
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-left: 100px;
+}
+
+.menu .rappi {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu .rappi a {
+  text-decoration: none;
+}
+
+.menu .rappi .boxRappi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 20px;
+
+  transform: scale(0.9);
+  transition: all ease 0.2s;
+
+  cursor: pointer;
+}
+
+.menu .rappi .boxRappi p {
+  font-family: sans-serif;
+
+  position: relative;
+  top: 3px;
+  font-size: 15px;
+  font-family: "Poppins";
+
+  color: #332927;
+}
+
+.menu .rappi .boxRappi span {
+  color: #fc6150;
+  margin-left: 10px;
+  padding: 3px;
+}
+
+.menu .rappi .boxRappi span:hover {
+  border-bottom: #fc6150;
+
+  text-decoration: underline;
+}
+
+.menu .rappi .boxRappi:hover {
+  transform: scale(1);
+}
+
+.menu .rappi img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.menu .nav a {
+  text-decoration: none;
+  color: var(--color-fontMenu);
+  font: 700 1.8rem "Petrona", serif;
+
+  padding: 9.9px;
+  margin-right: 70px;
+  position: relative;
+  top: 3px;
+
+  border-bottom: solid 2px #f86624;
+  transition: all ease 0.2s;
+
+  transform: scale(0.9);
+}
+
+.menu .nav a:hover {
+  transform: scale(1);
+
+  border-bottom: solid 2px var(--color-fontMenu);
+}
+
+.menu .logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu .logo h1 {
+  margin: 0 0 0 20px;
+  color: #fff;
+  font: 400 4.6rem "Pacifico", cursive;
+}

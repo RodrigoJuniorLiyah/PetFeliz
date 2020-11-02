@@ -5,9 +5,11 @@ const images = {
     proplanSalmao: "./ration/catRation/proplan-salmao.png",
     proplanUrinary: "./ration/catRation/proplanUrinary-frango.png",
     quatreeSupremeFrango: "./ration/catRation/quatreeSupreme-frango.png",
-    quatreeSupremeSalmao: "./ration/catRation/quatreeSupreme-salmao.png",
+    quatreeSupremeCastrado: "./ration/catRation/quatreeSupremeCastrado.png",
     thorCatMix: "./ration/catRation/thorCatMix.png",
     quatreeGourmetCat: "./ration/catRation/quatreeGourmetCat.png",
+    quatreeSupremeF: "./ration/catRation/quatreeSupremeF.png",
+    proplanCastrado: "./ration/catRation/proplanCastrado.png",
   },
   dogRations: {
     dogChowRPCarne: "./ration/dogRation/dogChowRP-carne.png",

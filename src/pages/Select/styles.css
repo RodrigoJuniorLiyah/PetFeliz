@@ -10,6 +10,7 @@
 .content-form .select-one {
   height: 4rem;
   width: 50%;
+  margin-top: 5px;
 
   font-size: 1.5rem;
 }
@@ -38,6 +39,8 @@ select {
 .form .feed {
   width: 100%;
   height: 100%;
+
+  margin-top: 5px;
 }
 
 .form .feed .feedImages {
@@ -48,16 +51,41 @@ select {
   height: 100%;
 }
 
-.feedImages .typeOne {
+.feedImages #typeOne {
   height: 50%;
   width: 100%;
+  
+  display: flex;
+  align-items: center;
 
- 
+  position: relative;
 }
 
-.feedImages .typeTwo {
+.feedImages .infoProduct {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* line-height: 0px; */
+}
+
+.feedImages .infoProduct p {
+  font: 400 11px 'Nunito';
+
+  margin: 5px 25px;
+}
+
+.feedImages #typeTwo {
   height: 50%;
   width: 100%;
+  
+  display: flex;
+  align-items: center;
+
+  position: relative;
 }
 
 .form .feed .feedImages img {

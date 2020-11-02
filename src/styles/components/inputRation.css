@@ -1,0 +1,15 @@
+.typeOneColor {
+  background: linear-gradient(329.54deg, #edece7 0%, #c59937 50%);
+}
+
+#typeOne .infoProduct .subtitleStrong {
+  font-weight: 800;
+  color: #000;
+  font-size: 13px;
+}
+
+#typeTwo .infoProduct .subtitleStrong {
+  font-weight: 800;
+  color: #000;
+  font-size: 13px;
+}

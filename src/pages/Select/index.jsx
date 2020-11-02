@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { searchCatRations, searchDogRations } from '../components/imagesRation';
+
+import KindOfDogFood from "./KindOfDogFood";
+import KindofCatFood from "./KindOfCatFood";
 
 import "./styles.css";
+import "../../styles/components/inputRation.css";
 
 function Select() {
   const [valor, setValor] = useState();
@@ -15,22 +18,51 @@ function Select() {
     setType(e.target.value);
   }
 
+  function handleInputDog() {
+    if (type === "pequeno") {
+      return type;
+    } else if (type === "filhote") {
+      return "filhote";
+    } else if (type === "medio") {
+      return "raças médias";
+    } else if (type === "grande") {
+      return "raças grandes";
+    } else if (type === "sevenPlus") {
+      return "7 anos ou mais";
+    } else {
+      return "Qual o porte do seu cão?";
+    }
+  }
+
+  function handleInputCat() {
+    if (type === "filhote") {
+      return type;
+    } else if (type === "adulto") {
+      return type;
+    } else if (type === "castrado") {
+      return type;
+    } else {
+      return "Em qual fase seu gato está?";
+    }
+  }
+
   function handleAnimalType() {
     if (valor === "dog") {
       return (
         <select
           className="select-two custom-select custom-select-sm"
-          defaultValue={"DEFAULT"}
+          value="DEFAULT"
           onChange={selectType}
+          style={{ fontFamily: "Nunito" }}
         >
           <option value="DEFAULT" disabled hidden className="text-muted">
-            Qual o porte do seu cão?
+            {handleInputDog()}
           </option>
           <option value="filhote">filhote</option>
           <option value="pequeno">raças pequenas</option>
           <option value="medio">raças médias</option>
           <option value="grande">raças grandes</option>
-          <option value="sevenPlus">mais de 7 anos</option>
+          <option value="sevenPlus">7 anos ou mais</option>
         </select>
       );
     } else if (valor === "cat") {
@@ -39,73 +71,15 @@ function Select() {
           className="select-two custom-select custom-select-sm"
           defaultValue={"DEFAULT"}
           onChange={selectType}
+          style={{ fontFamily: "Nunito" }}
         >
           <option value="DEFAULT" disabled hidden className="text-muted">
-            Em qual fase seu gato está
+            {handleInputCat()}
           </option>
           <option value="filhote">filhote</option>
           <option value="adulto">adulto</option>
           <option value="castrado">castrado</option>
         </select>
-      );
-    }
-  }
-
-  function handleFeedType() {
-    if(valor === 'dog' && type === 'filhote') {
-      return (
-        <div className="feedImages">
-          <div className="typeOne">
-            <img src={searchDogRations.quatreeGourmetF} alt="ração filhote" />
-          </div>
-          <div className="typeTwo">
-            <img src={searchDogRations.proplanFRP} alt="ração filhote" style={{width: '23%', marginLeft: '0'}} />
-          </div>
-        </div>
-      );
-    } else if (valor === 'dog' && type === "pequeno") {
-      return (
-        <div className="feedImages">
-          <div className="typeOne">
-            <img src={searchDogRations.dogChowRPCarne} alt="ração porte pequeno" style={{width: '20%', marginLeft: '0'}} />
-          </div>
-          <div className="typeTwo">
-            <img src={searchDogRations.quatreeSupremeRP} alt="ração porte pequeno" style={{width: '23%', marginLeft: '0'}} />
-          </div>
-        </div>
-      );
-    } else if (valor === 'dog' && type === "medio") {
-      return (
-        <div className="feedImages">
-          <div className="typeOne">
-            <img src={searchDogRations.quatreeGourmet} alt="ração porte medio"/>
-          </div>
-          <div className="typeTwo">
-            <img src={searchDogRations.proplanRM} alt="ração porte pequeno" style={{width: '23%', marginLeft: '0'}} />
-          </div>
-        </div>
-      );
-    } else if (valor === 'dog' && type === "grande") {
-      return (
-        <div className="feedImages">
-          <div className="typeOne">
-            <img src={searchDogRations.thorRG} alt="ração porte grande"/>
-          </div>
-          <div className="typeTwo">
-            <img src={searchDogRations.quatreegourmetSemCorante} alt="ração porte grande" />
-          </div>
-        </div>
-      );
-    } else if (valor === 'dog' && type === "sevenPlus") {
-      return (
-        <div className="feedImages">
-          <div className="typeOne">
-            <img src={searchDogRations.proplanRP7Plus} alt="ração 7 anos +" style={{width: '23%', marginLeft: '0'}} />
-          </div>
-          <div className="typeTwo">
-            <img src={searchDogRations.quatreeGourmetF} alt="ração 7 anos +" style={{marginLeft: '30px'}} />
-          </div>
-        </div>
       );
     }
   }
@@ -116,6 +90,7 @@ function Select() {
         className="select-one custom-select custom-select-lg mb-3"
         onChange={selectAnimal}
         defaultValue={"DEFAULT"}
+        style={{ fontFamily: "Nunito" }}
       >
         <option value="DEFAULT" disabled hidden className="text-muted">
           Qual é o seu animal?
@@ -125,7 +100,10 @@ function Select() {
       </select>
 
       <div className="results">{handleAnimalType()}</div>
-      <div className="feed">{handleFeedType()}</div>
+      <div className="feed">
+        <KindOfDogFood valor={valor} type={type} />
+        <KindofCatFood valor={valor} type={type} />
+      </div>
     </div>
   );
 }

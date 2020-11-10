@@ -26,6 +26,7 @@ const images = {
     quatreeLife: "./ration/dogRation/quatreeLife.png",
     quatreeSupremeRP: "./ration/dogRation/quatreeSupremeRP.png",
     thorRG: "./ration/dogRation/thorRG.png",
+    quatreeSupremeRPSevenPlus: "./ration/dogRation/quatreeSupremeRPSevenPlus.png",
   },
 };
 

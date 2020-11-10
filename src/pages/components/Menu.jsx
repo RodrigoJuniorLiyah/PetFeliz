@@ -15,7 +15,7 @@ export default function Menu() {
         <Link to="/">Home</Link>
         <Link to="/gallery">Galeria</Link>
         <Link to="/blog">Blog</Link>
-        <Link to="/contato">Contato</Link>
+        <Link to="/contato/">Contato</Link>
       </div>
       <div className="rappi">
         <a href="https://www.rappi.com.br/restaurantes/petshop-pet-feliz">

@@ -89,8 +89,6 @@ select {
 }
 
 .form .feed .feedImages img {
-  width: 16%;
   height: 100%;
-  margin-left: 20px;
   object-fit: contain;
 }

@@ -2,7 +2,12 @@ import React, { useState } from "react";
 
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
-import { searchBirthday, searchPets, searchCakes, searchProducts } from "../components/images";
+import {
+  searchBirthday,
+  searchPets,
+  searchCakes,
+  searchProducts,
+} from "../components/images";
 
 import "./styles.css";
 
@@ -14,7 +19,7 @@ function Galeria() {
   }
 
   function showBirthday() {
-    const search = searchBirthday.map(arrayImg =>
+    const search = searchBirthday.map((arrayImg) =>
       arrayImg.map((adrImg, index) => (
         <div key={index} className="card_img">
           <img src={adrImg} alt="img" className="small_img" />
@@ -26,78 +31,58 @@ function Galeria() {
   }
 
   function showPets() {
-    const search = searchPets.map(item => {
+    const search = searchPets.map((item) => {
       return item.map((adrImg, index) => {
         return (
           <div key={index} className="card_img">
             <img src={adrImg} alt="img pet" className="small_img" />
           </div>
         );
-      })
-    })
+      });
+    });
 
-    return search
+    return search;
   }
-  
+
   function showCakes() {
-    const search = searchCakes.map(item => {
+    const search = searchCakes.map((item) => {
       return item.map((adrImg, index) => {
         return (
           <div key={index} className="card_img">
             <img src={adrImg} alt="img pet" className="small_img" />
           </div>
         );
-      })
-    })
+      });
+    });
 
-    return search
+    return search;
   }
-  
+
   function showProducts() {
-    const search = searchProducts.map(item => {
+    const search = searchProducts.map((item) => {
       return item.map((adrImg, index) => {
         return (
           <div key={index} className="card_img">
             <img src={adrImg} alt="img pet" className="small_img" />
           </div>
         );
-      })
-    })
+      });
+    });
 
-    return search
+    return search;
   }
 
   function showInfoImages() {
     if (value === "birthday") {
-      return (
-        <div className="row">
-          {showBirthday()}
-        </div>
-      );
+      return <div className="row">{showBirthday()}</div>;
     } else if (value === "pets") {
-      return (
-        <div className="row">
-          {showPets()}
-        </div>
-      );
+      return <div className="row">{showPets()}</div>;
     } else if (value === "products") {
-      return (
-        <div className="row">
-          {showProducts()}
-        </div>
-      );
+      return <div className="row">{showProducts()}</div>;
     } else if (value === "cakes") {
-      return (
-        <div className="row">
-          {showCakes()}
-        </div>
-      );
+      return <div className="row">{showCakes()}</div>;
     } else {
-      return (
-        <div className="row">
-          {showBirthday()}
-        </div>
-      );
+      return <div className="row">{showBirthday()}</div>;
     }
   }
 
@@ -106,16 +91,24 @@ function Galeria() {
       <Menu />
       <div className="content-gallery">
         <div onClick={showImage} className="subMenu">
-          <button value={"birthday"} className="btnMenu">
+          <button
+            value={"birthday"}
+            className={
+              value === "birthday" || value === undefined ? "active" : ""
+            }
+          >
             Aniversário
           </button>
-          <button value={"pets"} className="btnMenu">
+          <button value={"pets"} className={value === "pets" ? "active" : ""}>
             Pets
           </button>
-          <button value={"products"} className="btnMenu">
+          <button
+            value={"products"}
+            className={value === "products" ? "active" : ""}
+          >
             Produtos
           </button>
-          <button value={"cakes"} className="btnMenu">
+          <button value={"cakes"} className={value === "cakes" ? "active" : ""}>
             Bolos Pet
           </button>
         </div>

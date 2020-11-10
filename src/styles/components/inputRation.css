@@ -1,15 +1,312 @@
-.typeOneColor {
-  background: linear-gradient(329.54deg, #edece7 0%, #c59937 50%);
+.infoProduct span {
+  color: #fafafa;
+  font: 400 1.3rem "Nunito";
 }
 
-#typeOne .infoProduct .subtitleStrong {
+.infoProduct {
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.7);
+
+  transform: scale(0.9);
+  transition: all ease 0.5s;
+
+  cursor: pointer;
+}
+
+.infoProduct:hover {
+  transform: scale(0.95);
+}
+
+.QuatreeGourmetFInfo:hover {
+  box-shadow: -5px 4px 5px rgba(255, 189, 48, 0.8);
+}
+
+/* rações quatree */
+
+.quatreeGourmetFStyles {
+  background: linear-gradient(329.54deg, #edece7 0%, rgb(197, 153, 55) 50%);
+}
+
+.quatreeGourmetFStyles img {
+  width: 16%;
+  margin: 0px 17px;
+}
+
+.quatreeGourmetFStyles .infoProduct .strongQuatreeFStyles {
+  color: #edece7;
+}
+
+.quatreeGourmetStyles {
+  background: linear-gradient(329.54deg, #402612 0%, #a68355 50%);
+}
+
+.QuatreeGourmetInfo:hover {
+  box-shadow: -5px 4px 5px rgba(77, 33, 0, 0.8);
+}
+
+.quatreeGourmetStyles img {
+  width: 16%;
+  margin: 0px 13px;
+}
+
+.quatreeGourmetStyles .infoProduct .strongQuatreeGourmetStyles {
+  color: #402612;
+}
+
+.quatreeSupremeRPStyles {
+  background: linear-gradient(329.54deg, #d03730 0%, #673b35 50%);
+}
+
+.QuatreeSupremeRPInfo:hover {
+  box-shadow: -5px 4px 5px rgba(248, 12, 0, 0.8);
+}
+
+.quatreeSupremeRPStyles img {
+  width: 20%;
+  margin-left: 5px;
+}
+
+.quatreeSupremeRPStyles .infoProduct .strongQuatreeSupremeRPStyles {
+  color: #d03730;
+}
+
+.quatreegourmetSemCoranteStyles {
+  background: linear-gradient(329.54deg, #402612 0%, #c59937 50%);
+}
+
+.QuatreegourmetSemCoranteInfo:hover {
+  box-shadow: -5px 4px 5px rgb(61, 27, 0);
+}
+
+.quatreegourmetSemCoranteStyles img {
+  width: 16%;
+  margin: 0 10px 0 10px;
+}
+
+.quatreegourmetSemCoranteStyles .infoProduct .strongQuatreeStyles {
+  color: #402612;
+}
+
+.quatreeSupremeRPSevenPlusStyles {
+  background: linear-gradient(329.54deg, #051f32 0%, #673b35 50%);
+}
+
+.QuatreeSupremeRPSevenPlusInfo:hover {
+  box-shadow: -5px 4px 5px #0095ffcc;
+}
+
+.quatreeSupremeRPSevenPlusStyles img {
+  width: 15%;
+  margin: 0px 17px;
+}
+
+.quatreeSupremeRPSevenPlusStyles
+  .infoProduct
+  .strongQuatreeSupremeRPSevenPlusStyles {
+  color: #0095ffcc;
+}
+
+/* rações proplan */
+
+.proplanFRPStyles {
+  background: linear-gradient(329.54deg, #007d75 0%, #363334 80%);
+}
+
+.ProplanFRPInfo:hover {
+  box-shadow: -5px 4px 5px rgba(1, 182, 170, 0.8);
+}
+
+.proplanFRPStyles .infoProduct .strongProplanFRPStyles {
+  color: #007d75;
+}
+
+.proplanFRPStyles img {
+  width: 23%;
+  margin-left: 0;
+}
+
+.proplanRMStyles {
+  background: linear-gradient(329.54deg, #bc1f41 0%, #030000 70%);
+}
+
+.ProplanRMInfo:hover {
+  box-shadow: -5px 4px 5px rgba(255, 41, 87, 0.8);
+}
+
+.proplanRMStyles img {
+  width: 23%;
+  margin-left: 0;
+}
+
+.proplanRMStyles .infoProduct .strongProplanRMStyles {
+  color: #bc1f41;
+}
+
+.sevenPlusStyles {
+  background: linear-gradient(329.54deg, #276497 0%, #363334 80%);
+}
+
+.SevenPlusInfo:hover {
+  box-shadow: -5px 4px 5px rgba(63, 168, 255, 0.8);
+}
+
+.sevenPlusStyles .infoProduct .strongProplanSevePlusStyles {
+  color: #40a9ff;
+}
+
+/* subtitles */
+
+#typeOne .infoProduct strong {
   font-weight: 800;
-  color: #000;
   font-size: 13px;
 }
 
-#typeTwo .infoProduct .subtitleStrong {
+#typeTwo .infoProduct strong {
   font-weight: 800;
-  color: #000;
   font-size: 13px;
+}
+
+/* rações dogChow */
+
+.dogChowRPCarneStyles {
+  background: linear-gradient(329.54deg, #123e13 0%, #149442 50%);
+}
+
+.DogChowRPCarneInfo:hover {
+  box-shadow: -5px 4px 5px rgba(72, 255, 75, 0.8);
+}
+
+.dogChowRPCarneStyles img {
+  width: 19%;
+  margin-left: 0;
+}
+
+.dogChowRPCarneStyles .infoProduct .strongDogChowRPCarneStyles {
+  color: #123e13;
+}
+
+/* rações Thor */
+
+.thorRGStyles {
+  background: linear-gradient(329.54deg, #fffd4d 0%, #b42526 50%);
+}
+
+.ThorRGInfo:hover {
+  box-shadow: -5px 4px 5px rgba(255, 251, 0, 0.8);
+}
+
+.thorRGStyles img {
+  width: 15%;
+  margin: 0px 7px;
+}
+
+.thorRGStyles .infoProduct .strongThorStyles {
+  color: #fffd4d;
+}
+
+/* Rações de gato */
+
+.hotcatStyles {
+  background: linear-gradient(329.54deg, #b11a3f 0%, #283f74 50%);
+}
+
+.HotcatInfo:hover {
+  box-shadow: -5px 4px 5px #ff245bcc;
+}
+
+.hotcatStyles .infoProduct .strongHotcatStyles {
+  color: #ff245bcc;
+}
+
+.hotcatStyles img {
+  width: 15%;
+  margin-left: 20px;
+}
+
+/* Quatree gatos */
+
+.quatreeSupremeFCatStyles {
+  background: linear-gradient(329.54deg, #673b35 0%, #629c83 50%);
+}
+
+.QuatreeSupremeFCatInfo:hover {
+  box-shadow: -5px 4px 5px #97ffd2;
+}
+
+.quatreeSupremeFCatStyles .infoProduct .strongQuatreeSupremeFCatStyles {
+  color: #97ffd2;
+}
+
+.quatreeSupremeFCatStyles img {
+  width: 15%;
+  margin-left: 30px;
+}
+
+.quatreeGourmetCatStyles {
+  background: linear-gradient(329.54deg, #ffca6f 0%, #c94452 50%);
+}
+
+.QuatreeGourmetCatInfo:hover {
+  box-shadow: -5px 4px 5px #ffc96c;
+}
+
+.quatreeGourmetCatStyles .infoProduct .strongQuatreeGourmetCatStyles {
+  color: #ffc96c;
+}
+
+.quatreeGourmetCatStyles img {
+  width: 17%;
+  margin-left: 30px;
+}
+
+.quatreeSupremeCastradoCatStyles {
+  background: linear-gradient(329.54deg, #cf866d 0%, #673b35 50%);
+}
+
+.QuatreeSupremeCastradoCatInfo:hover {
+  box-shadow: -5px 4px 5px #ffa485;
+}
+
+.quatreeSupremeCastradoCatStyles .infoProduct .strongQuatreeSupremeCastradoCatStyles {
+  color: #ffa485;
+}
+
+.quatreeSupremeCastradoCatStyles img {
+  width: 15%;
+  margin-left: 25px;
+}
+
+/* Proplan gatos */
+
+.proplanSalmaoCatStyles {
+  background: linear-gradient(329.54deg, #921727 0%, #a4a5a8 50%);
+}
+
+.ProplanSalmaoCatInfo:hover {
+  box-shadow: -5px 4px 5px #970014;
+}
+
+.proplanSalmaoCatStyles .infoProduct .strongProplanSalmaoCatStyles {
+  color: #970014;
+}
+
+.proplanSalmaoCatStyles img {
+  width: 21%;
+  margin-left: 10px;
+}
+
+.proplanCastradoCatStyles {
+  background: linear-gradient(329.54deg, #a4a5a8 0%, #c84a87 50%);
+}
+
+.ProplanCastradoCatInfo:hover {
+  box-shadow: -5px 4px 5px #a4a5a8;
+}
+
+.proplanCastradoCatStyles .infoProduct .strongProplanCastradoCatStyles {
+  color: #a4a5a8;
+}
+
+.proplanCastradoCatStyles img {
+  width: 21%;
+  margin-left: 0;
 }

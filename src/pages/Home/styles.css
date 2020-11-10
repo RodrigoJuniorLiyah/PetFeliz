@@ -32,7 +32,7 @@
 
 .input-search .button-search button {
   height: 50px;
-
+  margin: 0;
   transition: all ease 0.2s;
 }
 

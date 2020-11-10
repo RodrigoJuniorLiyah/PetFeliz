@@ -27,6 +27,9 @@ const images = [
       "./gallery/photosHappy/21.jpg",
       "./gallery/photosHappy/22.jpg",
       "./gallery/photosHappy/23.jpg",
+      "./gallery/photosHappy/24.jpg",
+      "./gallery/photosHappy/25.jpg",
+      "./gallery/photosHappy/26.jpg",
     ],
     pets: [
       "./gallery/pets/pet1.jpg",
@@ -66,6 +69,10 @@ const images = [
       "./gallery/cakes/bolo11.jpg",
       "./gallery/cakes/bolo12.jpg",
       "./gallery/cakes/bolo13.jpg",
+      "./gallery/cakes/bolo14.jpg",
+      "./gallery/cakes/bolo15.jpg",
+      "./gallery/cakes/bolo16.jpg",
+      "./gallery/cakes/bolo17.jpg",
     ],
     products: [
       "./gallery/products/product1.jpg",

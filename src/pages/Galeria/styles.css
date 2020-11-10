@@ -15,26 +15,36 @@
   align-items: center;
 }
 
-.btnMenu {
+button {
   padding: 10px 50px;
   margin: 30px;
 
   border-radius: 5px;
   border: none;
 
-  font: 400 1.3rem "Petrona", serif;
-  color: #fff;
-  background-color: rgba(38, 70, 83);
+  font: 400 1.3rem "Petrona";
+  color: #f86624;
+  background-color: #FFF;
 
   transition: 0.2s;
 }
 
-.btnMenu:hover {
-  background-color: rgba(38, 70, 83, 0.8);
+button:hover {
+  background-color: rgba(248, 102, 36, 0.7);
+  color: #FFF;
 }
 
-.btnMenu:focus {
+button:focus {
   outline: none;
+}
+
+.active {
+  border: 3px solid #fd3900;
+
+  transition: all ease 0.2s;
+
+  background-color: #f86624;
+  color: #FFF;
 }
 
 .row {
@@ -57,7 +67,6 @@
 .small_img {
   height: 100%;
   width: 100%;
-  cursor: pointer;
 
   transition: all linear 0.3s;
 

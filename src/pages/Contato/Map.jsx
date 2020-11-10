@@ -6,6 +6,7 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 import mapStyles from "./mapStyles";
+import icone from './icone.png';
 
 import "./styles.css";
 
@@ -57,6 +58,10 @@ export default function Map() {
       >
         <Marker
           position={{ lat: -19.936467, lng: -44.029362 }}
+          icon={{
+            url: `${icone}`,
+            scaledSize: new window.google.maps.Size(60, 60),
+          }}
           onClick={() => {
             setSelected(true);
           }}

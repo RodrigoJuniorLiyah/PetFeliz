@@ -63,6 +63,7 @@ export default function kindOfDogFood(props) {
             <img
               src={searchDogRations.dogChowRPCarne}
               alt="ração porte pequeno"
+              className="dogChowImg"
             />
             <div className="infoProduct DogChowRPCarneInfo">
               <p>
@@ -236,6 +237,7 @@ export default function kindOfDogFood(props) {
               src={searchDogRations.proplanRP7Plus}
               alt="ração 7 anos +"
               style={{ width: "23%", marginLeft: "0" }}
+              className="sevenPlusImg"
             />
             <div className="infoProduct SevenPlusInfo">
               <p>

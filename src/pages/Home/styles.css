@@ -100,3 +100,41 @@
     margin-right: 150px;
   }
 }
+
+/* responsiveness */
+
+@media (max-width: 414px) {
+  #page {
+    height: 120.7vh;
+  }
+}
+
+@media (max-width: 412px) {
+  #page {
+    height: 121.5vh;
+  }
+}
+
+@media (max-width: 376px) {
+  #page {
+    height: 133.2vh;
+  }
+}
+
+@media (max-width: 360px) {
+  #page {
+    height: 138.9vh;
+  }
+}
+
+@media (max-width: 320px) {
+  #page {
+    height: 156.2vh;
+  }
+}
+
+@media (max-width: 280px) {
+  #page {
+    height: 178.6vh;
+  }
+}

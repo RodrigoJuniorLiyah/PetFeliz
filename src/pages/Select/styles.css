@@ -92,3 +92,34 @@ select {
   height: 100%;
   object-fit: contain;
 }
+
+@media (max-width: 540px) {
+  .form .feed .feedImages img {
+    height: 25%;
+    width: 100%;
+    object-fit: contain;
+
+    margin: 0;
+  }
+
+  .feedImages #typeOne {
+    flex-direction: column;
+  }
+
+  .feedImages #typeOne .sevenPlusImg {
+    object-fit: cover;
+  }
+
+  .feedImages #typeOne .dogChowImg {
+    width: 100%;
+    height: 30%;
+  }
+
+  .proPlanSevenPlusImg {
+    object-fit: cover;
+  }
+
+  .feedImages #typeTwo {
+    flex-direction: column;
+  }
+}

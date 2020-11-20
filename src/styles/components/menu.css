@@ -108,3 +108,279 @@
   color: #fff;
   font: 400 4.6rem "Pacifico", cursive;
 }
+
+.menu .toggleBox {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+.menu .toggleBox .toggleIcon {
+  width: 50px;
+  height: 50px;
+
+  background-color: #fff;
+  color: #ff5100;
+
+  transition: 0.2s;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.menu .toggleBox .toggleIconActive {
+  width: 50px;
+  height: 50px;
+
+  background-color: #ff6720;
+  color: #fff;
+
+  box-shadow: 1.5px 1.5px 1px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+
+  transform: scale(0.95);
+  transition: all ease 0.2s;
+
+  cursor: pointer;
+}
+
+.menu .toggleBox .toggleIcon:hover {
+  background-color: #ff6720;
+  color: #fff;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.handleToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ff6720;
+  color: #fff;
+
+  width: 100px;
+  height: 200px;
+  line-height: 25px;
+
+  box-shadow: 3px 2.5px 4px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+
+  position: absolute;
+  top: 60px;
+
+  z-index: 100;
+}
+
+.handleToggle .navToggle {
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.handleToggle .navToggle a {
+  text-decoration: none;
+  color: var(--color-fontMenu);
+  font: 700 1.6rem "Petrona", serif;
+
+  border-bottom: solid 2px #ff6720;
+  transition: all ease 0.2s;
+
+  transform: scale(0.9);
+
+  line-height: 45px;
+  text-align: center;
+}
+
+.handleToggle .navToggle a:hover {
+  transform: scale(1);
+
+  border-bottom: solid 2px var(--color-fontMenu);
+}
+
+@media (max-width: 815px) {
+  .menu .nav {
+    display: none;
+  }
+
+  .menu .toggleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .menu {
+    width: 100%;
+  }
+
+  .menu .rappi {
+    display: flex;
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    top: -5px;
+
+    /* display: none; */
+  }
+
+  .menu .rappi .boxRappi {
+    margin: 0;
+    padding: 3px;
+  }
+  .menu .rappi .boxRappi p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  .menu .rappi {
+    right: -32px;
+  }
+
+  .menu .rappi .boxRappi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+  
+    transform: scale(0.8);
+    transition: all ease 0.2s;
+  
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu .rappi {
+    right: -50px;
+  }
+
+  .menu .rappi .boxRappi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-right: 20px;
+  
+    transform: scale(0.64);
+    transition: all ease 0.2s;
+  
+    cursor: pointer;
+  }
+
+  .menu .toggleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    left: -15px;
+  }
+
+  .menu .logo h1 {
+    margin: 0 0 0 20px;
+    color: #fff;
+    font: 400 4.6rem "Pacifico", cursive;
+
+    position: relative;
+    left: -10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .menu .rappi {
+    right: -80px;
+  }
+  
+  .menu .rappi .boxRappi {
+    transform: scale(0.75)
+  }
+  .menu .rappi .boxRappi:hover {
+    transform: scale(0.83)
+  }
+}
+
+@media (max-width: 416px) {
+  .menu .rappi {
+    right: -80px;
+  }
+  
+  .menu .rappi .boxRappi {
+    transform: scale(0.75)
+  }
+  .menu .rappi .boxRappi:hover {
+    transform: scale(0.83)
+  }
+}
+
+@media (max-width: 376px) {
+  .menu .rappi {
+    right: -120px;
+  }
+  
+  .menu .rappi .boxRappi {
+    transform: scale(0.75)
+  }
+  .menu .rappi .boxRappi:hover {
+    transform: scale(0.83)
+  }
+}
+
+@media (max-width: 360px) {
+  .menu .rappi {
+    right: -140px;
+  }
+  
+  .menu .rappi .boxRappi {
+    transform: scale(0.7)
+  }
+  .menu .rappi .boxRappi:hover {
+    transform: scale(0.75)
+  }
+}
+
+@media (max-width: 320px) {
+  .menu .rappi {
+    right: -180px;
+  }
+  
+  .menu .rappi .boxRappi {
+    transform: scale(0.7)
+  }
+  .menu .rappi .boxRappi:hover {
+    transform: scale(0.78)
+  }
+}
+
+@media (max-width: 280px) {
+  .menu .rappi {
+    right: -219px;
+  }
+  
+  .menu .rappi .boxRappi:hover {
+    transform: scale(0.79)
+  }
+
+  .menu .toggleBox {
+    left: 15px;
+  }
+}
+

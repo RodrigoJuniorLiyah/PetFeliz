@@ -11,18 +11,29 @@ import {
 
 import "./styles.css";
 
-function Galeria() {
+function Galeria(props) {
   const [value, setValue] = useState();
 
   function showImage(e) {
     setValue(e.target.value);
   }
 
+  const changeImagePath = (props, adrImg) => {
+    if (props.match.url === "/gallery/") {
+      return adrImg.replace("gallery/", "/gallery/");
+    }
+    return adrImg;
+  };
+
   function showBirthday() {
     const search = searchBirthday.map((arrayImg) =>
       arrayImg.map((adrImg, index) => (
         <div key={index} className="card_img">
-          <img src={adrImg} alt="img" className="small_img" />
+          <img
+            src={changeImagePath(props, adrImg)}
+            alt="img"
+            className="small_img"
+          />
         </div>
       ))
     );
@@ -31,59 +42,63 @@ function Galeria() {
   }
 
   function showPets() {
-    const search = searchPets.map((item) => {
-      return item.map((adrImg, index) => {
-        return (
-          <div key={index} className="card_img">
-            <img src={adrImg} alt="img pet" className="small_img" />
-          </div>
-        );
-      });
-    });
+    const search = searchPets.map((arrayImg) =>
+      arrayImg.map((adrImg, index) => (
+        <div key={index} className="card_img">
+          <img
+            src={changeImagePath(props, adrImg)}
+            alt="img pet"
+            className="small_img"
+          />
+        </div>
+      ))
+    );
 
     return search;
   }
 
   function showCakes() {
-    const search = searchCakes.map((item) => {
-      return item.map((adrImg, index) => {
-        return (
-          <div key={index} className="card_img">
-            <img src={adrImg} alt="img pet" className="small_img" />
-          </div>
-        );
-      });
-    });
+    const search = searchCakes.map((arrayImg) =>
+      arrayImg.map((adrImg, index) => (
+        <div key={index} className="card_img">
+          <img
+            src={changeImagePath(props, adrImg)}
+            alt="img"
+            className="small_img"
+          />
+        </div>
+      ))
+    );
 
     return search;
   }
 
   function showProducts() {
-    const search = searchProducts.map((item) => {
-      return item.map((adrImg, index) => {
-        return (
-          <div key={index} className="card_img">
-            <img src={adrImg} alt="img pet" className="small_img" />
-          </div>
-        );
-      });
-    });
+    const search = searchProducts.map((arrayImg) =>
+      arrayImg.map((adrImg, index) => (
+        <div key={index} className="card_img">
+          <img
+            src={changeImagePath(props, adrImg)}
+            alt="img"
+            className="small_img"
+          />
+        </div>
+      ))
+    );
 
     return search;
   }
 
   function showInfoImages() {
-    if (value === "birthday") {
-      return <div className="row">{showBirthday()}</div>;
-    } else if (value === "pets") {
-      return <div className="row">{showPets()}</div>;
-    } else if (value === "products") {
-      return <div className="row">{showProducts()}</div>;
-    } else if (value === "cakes") {
-      return <div className="row">{showCakes()}</div>;
-    } else {
-      return <div className="row">{showBirthday()}</div>;
-    }
+    const info = {
+      birthday: <div className="row">{showBirthday()}</div>,
+      pets: <div className="row">{showPets()}</div>,
+      products: <div className="row">{showProducts()}</div>,
+      cakes: <div className="row">{showCakes()}</div>,
+      undefined: <div className="row">{showBirthday()}</div>,
+    };
+
+    return info[value];
   }
 
   return (

@@ -89,3 +89,19 @@
 
   color: #2f55a4;
 }
+
+/* responsividade */
+
+@media (max-width: 540px) {
+  .footer {
+    width: 100%;
+  }
+
+  .footer .face {
+    display: none;
+  }
+
+  .footer .insta {
+    display: none;
+  }
+}

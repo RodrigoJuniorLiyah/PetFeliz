@@ -6,7 +6,7 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 import mapStyles from "./mapStyles";
-import icone from './icone.png';
+import icone from '../../assets/img/icone.png';
 
 import "./styles.css";
 

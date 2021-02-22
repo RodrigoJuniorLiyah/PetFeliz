@@ -103,7 +103,7 @@
 
 /* responsiveness */
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   #page {
     height: 120.7vh;
   }
@@ -111,7 +111,7 @@
 
 @media (max-width: 412px) {
   #page {
-    height: 121.5vh;
+    height: 121.8vh;
   }
 }
 

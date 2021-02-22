@@ -30,44 +30,53 @@ function Contact() {
             </p>
           </header>
 
+          <div className="boxInfo">
+              <h3>Contatos</h3>
+            </div>
+
           <main>
-            <h3>Contatos</h3>
-            <p>
-              <strong>
-                <FaWhatsappSquare size={25} color={"#008000"} />
-              </strong>
-              <span>
-                <strong> (31) </strong>99420-7614
-              </span>
-            </p>
-            <p>
-              <strong>
-                <FiPhoneIncoming size={20} />
-              </strong>
-              <span>
-                <strong> (31) </strong>2567-2222
-              </span>
-            </p>
-            <p>
-              <strong>
-                <AiOutlineMail size={25} color={"#4169e1"} />{" "}
-              </strong>
-              contato@petshoppetfeliz.com.br
-            </p>
-            <p>
-              <strong>
-                <FaInstagramSquare size={25} color={"#a52a2a"} />{" "}
-              </strong>
-              <a href="https://www.instagram.com/petfeliz_pet_shop/">
-                petfeliz_pet_shop
-              </a>
-            </p>
-            <p>
-              <strong>
-                <AiFillFacebook size={25} color={"#2f55a4"} />{" "}
-              </strong>
-              <a href="https://www.facebook.com/petshoppetfeliz.bh">PetFeliz</a>
-            </p>
+            <div>
+              <p>
+                <strong>
+                  <FaWhatsappSquare size={25} color={"#008000"} />
+                </strong>
+                <span>
+                  <a href="tel:+553199420-7614"><strong> (31) </strong>99420-7614</a>
+                </span>
+              </p>
+              <p>
+                <strong>
+                  <FiPhoneIncoming size={20} />
+                </strong>
+                <span>
+                  <a href="tel:+55312567-2222"><strong> (31) </strong>2567-2222</a>
+                </span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <strong>
+                  <AiOutlineMail size={25} color={"#4169e1"} />{" "}
+                </strong>
+                <a href="mailto:contato@petshoppetfeliz.com.br">contato@petshoppetfeliz.com.br</a>
+              </p>
+              <p>
+                <strong>
+                  <FaInstagramSquare size={25} color={"#a52a2a"} />{" "}
+                </strong>
+                <a href="https://www.instagram.com/petfeliz_pet_shop/">
+                  PetfelizPethop
+                </a>
+              </p>
+              <p>
+                <strong>
+                  <AiFillFacebook size={25} color={"#2f55a4"} />{" "}
+                </strong>
+                <a href="https://www.facebook.com/petshoppetfeliz.bh">
+                  PetFeliz
+                </a>
+              </p>
+            </div>
           </main>
 
           <footer>

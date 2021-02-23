@@ -58,8 +58,8 @@ button:focus {
 }
 
 .card_img {
-  width: 200px;
-  height: 200px;
+  width: 25rem;
+  height: 25rem;
   overflow: hidden;
   margin: 25px;
 }
@@ -67,6 +67,7 @@ button:focus {
 .small_img {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 
   transition: all linear 0.3s;
 
